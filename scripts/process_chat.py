@@ -39,7 +39,7 @@ def generate_message_data(all_divs):
 
     for message_num, div in enumerate(all_divs):
         no_para = div.find_all('div', attrs={'class': "empty:hidden"})
-        para = div.find_all('p')
+        para = div.find_all(['p', 'code'])
 
         if no_para:
             final_data_structure_as_dict['message_content'].append(no_para[0].text)
