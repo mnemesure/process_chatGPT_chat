@@ -66,7 +66,9 @@ def save_output(final_data_struct,url):
     print(f"{url.split('/')[-1]}.csv saved successfully")
 
 if __name__=="__main__":
+    # Change the URL here to connect with your chat
     url = "https://chat.openai.com/share/e2b77f39-4b58-44e3-8523-9529c817af64"
+    
     all_html = get_html_from_GPT_link(url)
     message_divs = get_all_messages(all_html)
     final_data = generate_message_data(message_divs)
