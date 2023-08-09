@@ -1,7 +1,34 @@
 chatGPT-chat-process
 ==============================
+The code in this repository is used to process data from chatGPT share links.
 
-parse chatGPT share links
+## Quickstart
+Python version is `python3.11`
+
+Generate virtual environment
+
+`python3 -m venv venv`
+
+Activate environment
+
+For windows:
+
+`source venv/Scripts/activate`
+
+for linux and MacOS
+
+`source venv/bin/activate`
+
+Navigate into `scripts/process_chat.py` and change the url to your chat link.
+
+Now run `python3 process_chat.py` and it will generate a csv with your conversation.
+
+## Getting your chat link from chatGPT
+
+Once your conversation is finished, in the top righthand corner of chatGPT there is a share icon. Click this icon
+
+A popup will appear on screen with a green button that says "copy link." This is what you paste into the url in `scripts/process_chat.py`
+
 
 Project Organization
 ------------
