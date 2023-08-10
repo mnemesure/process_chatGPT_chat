@@ -60,6 +60,9 @@ def generate_message_data(all_divs):
 
 
 def save_output(final_data_struct,url):
+    """
+    Save output as CSV
+    """
     data_for_csv = pd.DataFrame(final_data_struct)
     data_for_csv.to_csv(f"{url.split('/')[-1]}.csv",index=False)
     
